@@ -8,8 +8,6 @@ export default function Home() {
   const priceList = [
     { service: "Cuci Satuan Premium",  image: "/asset/Price1.jpeg" },
     { service: "Laundry Services", image: "/asset/Price2.jpeg" },
-    { service: "Event 17 Agustus", image: "/asset/Price3.jpeg" },
-    { service: "Diskon Harian", image: "/asset/Price4.jpeg" },
   ];
 
   return (
@@ -20,7 +18,8 @@ export default function Home() {
       </header>
 
       <section className="flex-1 w-full p-6 flex justify-center items-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 justify-items-center mx-auto max-w-3xl">
+ 
           {priceList.map((item, index) => (
             <div
               key={index}
